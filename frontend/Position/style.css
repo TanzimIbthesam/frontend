@@ -1,0 +1,47 @@
+.container{
+    width: 500px;
+    height: 400px;
+    /* background: cornflowerblue; */
+    position: relative;
+}
+.ball{
+    width: 100px;
+    height: 100px;
+    background: lightcoral;
+    opacity: 0.5;
+    border-radius: 50%;
+    position: absolute;
+    left:50%;
+    top: 50%;
+    transform:translate(-50%,-50%);
+    z-index: 1;
+   
+
+}
+.ballone{
+    width: 100px;
+    height:100px;
+    background: green;
+    border-radius: 50%;
+    position: absolute;
+    left:50%;
+    top: 52%;
+    z-index: ;
+}
+.balltwo{
+    width: 100px;
+    height: 100px;
+    background: seagreen;
+    border-radius: 50%;
+    position: absolute;
+    /* right: 0; */
+    top: 47%;
+    /* right: 50%; */
+    right: 48%;
+    
+    background: orange;
+    /* transform: translate(0,-50%); */
+    z-index: -2;
+
+
+}

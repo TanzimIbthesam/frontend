@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Flex</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: 0;
+            }
+          section{
+              background: cyan;
+             width: 100%;
+              
+              /* flex-direction: row-reverse; */
+              /* justify-content:center; */
+              /* justify-content:space-around; */
+             
+             /* align-items:flex-start; */
+             /* align-items: flex-end; */
+             /* align-items: center; */
+             
+          }
+          
+    section div{
+        
+        flex-basis: 30%;
+        padding: 20px;
+        border: 1px solid grey;
+        
+        
+    }
+    /* Dividing columns into different sizes as per need */
+    .flexone{
+        /* flex:2; */
+        background: red;
+    }
+    .flextwo{
+        /* flex:1; */
+        background: blue;
+    }
+    .flexthree{
+        /* flex:1; */
+        background: green;
+    }
+    @media(min-width:768px){
+      section{
+          
+          display: flex;
+          justify-content: space-between;
+          
+          
+      }
+    }
+    </style>
+</head>
+<body>
+    
+           <section >
+            <div class="flexone">
+                One Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore tempore temporibus necessitatibus rem dolores minima omnis, culpa voluptas itaque atque aut ducimus ipsam, incidunt repellat animi ratione sapiente nisi, dolore iure. Perferendis.
+            </div>
+            <div class="flextwo">
+                Two Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit dolores maiores vero possimus
+            </div>
+            <div class="flexthree">
+                Three Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti repellat ut in eaque temporibus ad, id exercitationem neque eligendi totam officia! Corrupti quos obcaecati optio nesciunt quasi a incidunt quia. Minus, nam!
+            </div>
+        </section>
+    
+</body>
+</html>
