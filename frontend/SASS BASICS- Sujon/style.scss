@@ -1,0 +1,67 @@
+$color:aqua;
+$height:200px;
+
+
+body{
+    background-color: red;
+    color:$color; 
+    min-height:$height;
+    
+}
+.box{
+    width:100px;
+    // height:100px;
+    height:600/960 * 100%;
+    background:yellow;
+
+}
+// %commonsection{
+//     padding:20px 0;
+//     margin:10px 0;
+//     font-family:tahoma;
+//     font-size:16px;
+//     color:#0000;
+// }
+// .about-us{
+//     @extend %commonsection;
+// }
+// .portfolio{
+//     @extend %commonsection;
+// }
+@import 'header';
+ul{
+    li{
+      display: inline-block;
+    }
+    a{
+      text-decoration:none;
+    }
+}
+@import 'box';
+
+@import 'reset';
+$font-size:16px;
+$font-weight:normal;
+$font-family:sans-serif;
+$font-color:#0000;
+$line-height:1.5em;
+
+%section{
+    padding:40px 0;
+    font-size:$font-size;
+    color:$font-color;
+    width:90%;
+    margin:auto;
+}
+nav{
+    ul{
+        li{
+          list-style:none;
+          display:inline-block;
+        }
+        a{
+            text-decoration:none;
+            padding:10px 20px;
+        }
+    }
+}

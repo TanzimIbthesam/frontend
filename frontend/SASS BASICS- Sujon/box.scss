@@ -1,0 +1,25 @@
+@mixin bgcolors($bgcolor,$bgcolortwo){
+    background: -webkit-linear-gradient($bgcolor,$bgcolortwo);
+    background: -o-linear-gradient($bgcolor,$bgcolortwo);
+    background:-moz-linear-gradient($bgcolor,$bgcolortwo);
+}
+.box{
+    height:100px;
+    
+    width:100px;
+    @include bgcolors(yellow,crimson);
+    display: inline-block;
+
+}
+#boxtwo{
+    height:100px;
+    width:100px;
+    @include bgcolors(green,yellow);
+    display: inline-block;
+}
+#boxtwo{
+    height:100px;
+    width:100px;
+    @include bgcolors(red,black);
+    display: inline-block; 
+}
