@@ -1,0 +1,27 @@
+Install via command line 
+1. At first initialize a JSON file npm init .then npm install tailwindcss
+2. After that go to your preferred style 
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+3. Create your Tailwind config file 
+npx tailwindcss init
+4.npm install postcss-cli autoprefixer
+4. Create a postcss.config.js file
+Just copy and paste 
+module.exports = {
+    
+    plugins: [
+        require('tailwindcss'),
+        require('autoprefixer')
+    ],
+}
+5.Go to package.json file then 
+write 
+ "scripts": {
+    "build": "postcss build style.css -o output.css",
+    "watch": "postcss build style.css -o output.css --watch"
+  },
+At first run npm run build from next time just do npm run watch
