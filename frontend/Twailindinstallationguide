@@ -1,6 +1,7 @@
 Install via command line 
-1. At first initialize a JSON file npm init .then npm install tailwindcss
-2. After that go to your preferred style 
+1. At first initialize a JSON file npm init .then npm install tailwindcss 
+then run npm install tailwindcss
+2. After that go to your  stylesheet then copy and paste 
 @tailwind base;
 
 @tailwind components;
