@@ -1,0 +1,57 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+.green{
+    @apply bg-green-600 text-white flex-1 h-64 m-4
+}
+ .blue{
+   @apply  bg-blue-600 text-white flex-1 h-64 m-4
+}
+.red{
+@apply bg-red-600 text-white flex-1 h-64 m-4
+} 
+.cardsectiontext{
+    @apply text-center pt-24 text-2xl
+}
+.grid{
+    @apply bg-teal-100 h-64 w-full m-2 flex justify-center items-center
+}
+
+.gridtwo{
+    @apply bg-teal-200 h-64 w-full m-2 flex justify-center items-center
+}
+.btn{
+    @apply bg-indigo-900 px-4 py-1 m-8 text-white 
+}
+.h-128{
+    height:19rem;
+}
+.btn:hover{
+    @apply bg-orange-600;
+}
+@screen lg {
+    .btn {
+        @apply bg-teal-600 px-4 py-1 italic
+    }
+
+}
+@screen sm{
+    .btn{
+        @apply bg-yellow-600 px-4 py-1 font-bold
+    } 
+    
+}
+.w-128{
+    width:18rem;
+}
+.silver{
+    color: silver;
+}
+.h-128{
+    height: ;
+}
+
+

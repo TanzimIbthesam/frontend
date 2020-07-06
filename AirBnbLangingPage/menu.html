@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/output.css">
+</head>
+<body>
+    <div class="sm:flex sm:justify-start items-center w-full flex-col bg-purple-300 py-5">
+        <div class="flex justify-between sm:w-5/6 w-full ">
+        <div class="text-white">
+            <h1 class="text-white font-semibold text-2xl font-sans">Company Logo</h1>
+        </div>
+    <div>
+        <button type="button" class="w-6 h-6 sm:hidden block  text-white block hamburgermenu">
+            <svg class="fill-current" viewBox="0 0 24 24">
+                <path fill-rule="evenodd"
+                    d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z" />
+            </svg>
+        </button>
+    </div>
+        
+        <div class="text-white">
+             
+            <ul class="flex flex-col sm:flex sm:flex-row justify-start  hidden sm:block sm:pt-0 ml-auto sm:block m-0 p-0">
+                <li class="pl-2 text-2xl  md:text-xl xl:text-2xl hover:text-black"><a href="">Home</a></li>
+                <li class="pl-2 text-2xl  md:text-xl xl:text-2xl"><a href="">AboutUs</a></li>
+                <li class="pl-2 text-2xl  md:text-xl xl:text-2xl"><a href="">Contact</a></li>
+                <li class="pl-2 text-2xl  md:text-xl xl:text-2xl"><a href="">HearFromUs</a></li>
+                <li class="pl-2 text-2xl  md:text-xl xl:text-2xl"><a href="">Buy</a></li>
+                <!-- <li class="pl-2 text-2xl"><a href="">About Us</a></li>
+                <li class="pl-2 text-2xl"><a href="">Contact</a></li>
+                <li class="pl-2 text-2xl"><a href="">Hear from us</a></li>
+                <li class="pl-2 text-2xl"><a href="">Sign Up</a></li>
+                <li class="pl-2 text-2xl"><a href="">Buy</a></li> -->
+               
+               
+            </ul>
+        </div>
+         
+        </div>
+        
+       
+    </div>
+    <script>
+        const hamburgermenu=document.querySelector('.hamburgermenu');
+        const ul=document.querySelector('ul');
+      
+
+        // console.log(ul);
+        // console.log(hamburgermenu);
+        hamburgermenu.addEventListener('click',()=>{
+            // ul.classList.add('block');
+      
+            
+        });
+    </script>
+</body>
+</html>
